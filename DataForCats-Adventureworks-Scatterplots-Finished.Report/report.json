@@ -1,0 +1,241 @@
+{
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.61\",\"type\":2},\"customTheme\":{\"name\":\"AccessibleNeutral\",\"version\":\"5.61\",\"type\":2}},\"activeSectionIndex\":4,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "filters": "[]",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "AccessibleNeutral",
+            "path": "BuiltInThemes/AccessibleNeutral.json",
+            "type": 201
+          },
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Check Side by Side",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "18dad211ce190a687bb0",
+      "ordinal": 3,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"29131f7460407b6278c3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":592.1117994851339,\"y\":44.03179722198648,\"z\":2000,\"width\":568.9371693682989,\"height\":463.49260233669975,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"scatterChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Product.Category\",\"active\":true},{\"queryRef\":\"Product.Subcategory\",\"active\":true},{\"queryRef\":\"Date.Start of Week\",\"active\":true}],\"X\":[{\"queryRef\":\"Calculations.sum_orders\",\"active\":true}],\"Y\":[{\"queryRef\":\"Calculations.avg_profit\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Date\",\"Type\":0},{\"Name\":\"p\",\"Entity\":\"Product\",\"Type\":0},{\"Name\":\"c\",\"Entity\":\"Calculations\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Start of Week\"},\"Name\":\"Date.Start of Week\",\"NativeReferenceName\":\"Start of Week\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Category\"},\"Name\":\"Product.Category\",\"NativeReferenceName\":\"Category\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Subcategory\"},\"Name\":\"Product.Subcategory\",\"NativeReferenceName\":\"Subcategory\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"sum_orders\"},\"Name\":\"Calculations.sum_orders\",\"NativeReferenceName\":\"sum_orders\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"avg_profit\"},\"Name\":\"Calculations.avg_profit\",\"NativeReferenceName\":\"avg_profit\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"trend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"displayName\":{\"expr\":{\"Literal\":{\"Value\":\"'Trend line 1'\"}}}}}]}}}",
+          "filters": "[{\"name\":\"c7557c006833f6aeb480\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Reseller\"}},\"Property\":\"Reseller\"}},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"isHiddenInViewMode\":false},{\"expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Calculations\"}},\"Property\":\"Gross Profit Margin\"}},\"type\":\"Advanced\",\"howCreated\":1,\"isHiddenInViewMode\":false}]",
+          "height": 463.49,
+          "width": 568.94,
+          "x": 592.11,
+          "y": 44.03,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"4b680bd01840169d08b4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":29.43821121980435,\"y\":44.15731682970653,\"z\":0,\"width\":563.0057895787583,\"height\":478.37093232182076,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"scriptVisual\",\"projections\":{\"Values\":[{\"queryRef\":\"Calculations.sum_orders\"},{\"queryRef\":\"Calculations.avg_profit\"},{\"queryRef\":\"Product.Category\"},{\"queryRef\":\"Product.Subcategory\"},{\"queryRef\":\"Date.Start of Week\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calculations\",\"Type\":0},{\"Name\":\"p\",\"Entity\":\"Product\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"Date\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Category\"},\"Name\":\"Product.Category\",\"NativeReferenceName\":\"Category\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Subcategory\"},\"Name\":\"Product.Subcategory\",\"NativeReferenceName\":\"Subcategory\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Start of Week\"},\"Name\":\"Date.Start of Week\",\"NativeReferenceName\":\"Start of Week\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"avg_profit\"},\"Name\":\"Calculations.avg_profit\",\"NativeReferenceName\":\"avg_profit\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"sum_orders\"},\"Name\":\"Calculations.sum_orders\",\"NativeReferenceName\":\"sum_orders\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"sum_orders\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"script\":[{\"properties\":{\"source\":{\"expr\":{\"Literal\":{\"Value\":\"'# The following code to create a dataframe and remove duplicated rows is always executed and acts as a preamble for your script: \\n\\n# dataset <- data.frame(Category, Subcategory, Avg. Gross Profit Margin, Sum Order Quantity, Start of Week)\\n# dataset <- unique(dataset)\\n\\n# Paste or type your script code here:\\n\\nlibrary(ggplot2) # dependency\\n\\nggplot(dataset, aes(y = avg_profit, x = sum_orders)) +\\n  # sets the visual type \\n  geom_point() +\\n  # sets the labels\\n  labs(title = \\\"Scatter Plot\\\", x = \\\"sum_orders\\\", y = \\\"avg_profit\\\") +\\n  # adds a linear regression line\\n  geom_smooth(method = \\\"lm\\\")\\n\\n\\n# Fit a linear regression to the plot and extract the coefficients\\n model <- lm(avg_profit ~ sum_orders, data = dataset)\\n coefs <- coef(model)\\n\\n# Create a table with the values of the linear regression\\n library(gridExtra)\\n grid.table(data.frame(coefs))'\"}}},\"provider\":{\"expr\":{\"Literal\":{\"Value\":\"'R'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 478.37,
+          "width": 563.01,
+          "x": 29.44,
+          "y": 44.16,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"6c8f5107da1f05608a5e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":993.0329005063792,\"y\":573.5720953916659,\"z\":1000,\"width\":287.3654134487538,\"height\":146.00016973606043,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Product.Category\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"Product\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Category\"},\"Name\":\"Product.Category\",\"NativeReferenceName\":\"Category\"}]},\"syncGroup\":{\"groupName\":\"Category\",\"fieldChanges\":true,\"filterChanges\":true},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"Product\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Category\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Bikes'\"}}]]}}}]}}}}]}}}",
+          "filters": "[]",
+          "height": 146.00,
+          "width": 287.37,
+          "x": 993.03,
+          "y": 573.57,
+          "z": 1000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"relationships\":[{\"source\":\"fbef1ab1234090fb0c8c\",\"target\":\"ecbff038c61064514ba4\",\"type\":3}],\"objects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":7,\"Percent\":0.6}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"80D\"}}}}}]}}",
+      "displayName": "Standard Scatter Plot",
+      "displayOption": 1,
+      "filters": "[{\"name\":\"c13c459878f500e58b23\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Reseller\"}},\"Property\":\"Reseller\"}},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{\"general\":[{\"properties\":{}}]}}]",
+      "height": 720.00,
+      "name": "2e880c9880234cd90c51",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"64cb63fc8adb9f7b5b56\",\"layouts\":[{\"id\":0,\"position\":{\"x\":13.843594009983361,\"y\":20.232945091514143,\"z\":0,\"width\":826.3560732113144,\"height\":680.4658901830283,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"scatterChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Date.Start of Week\",\"active\":true}],\"X\":[{\"queryRef\":\"Sales.Sum Order Quantity\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sales.Avg Gross Profit Margin\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Date\",\"Type\":0},{\"Name\":\"c\",\"Entity\":\"Calculations\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Sum Order Quantity\"},\"Name\":\"Sales.Sum Order Quantity\",\"NativeReferenceName\":\"Total Ordered\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Start of Week\"},\"Name\":\"Date.Start of Week\",\"NativeReferenceName\":\"Start of Week\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Avg. Gross Profit Margin\"},\"Name\":\"Sales.Avg Gross Profit Margin\",\"NativeReferenceName\":\"Avg. Gross Profit Margin\"}]},\"columnProperties\":{\"Sales.Sum Order Quantity\":{\"displayName\":\"Total Ordered\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"trend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"displayName\":{\"expr\":{\"Literal\":{\"Value\":\"'Trend line 1'\"}}}}}]}}}",
+          "filters": "[{\"name\":\"c7557c006833f6aeb480\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Reseller\"}},\"Property\":\"Reseller\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"r\",\"Entity\":\"Reseller\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"Reseller\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'[Not Applicable]'\"}}]]}}}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"isHiddenInViewMode\":false},{\"expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Calculations\"}},\"Property\":\"Gross Profit Margin\"}},\"type\":\"Advanced\",\"howCreated\":1,\"isHiddenInViewMode\":false}]",
+          "height": 680.47,
+          "width": 826.36,
+          "x": 13.84,
+          "y": 20.23,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"66785fcc04c657947ece\",\"layouts\":[{\"id\":0,\"position\":{\"x\":859.3677204658902,\"y\":359.93344425956735,\"z\":3000,\"width\":397.20465890183027,\"height\":340.765391014975,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Product.Model\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"Product\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Model\"},\"Name\":\"Product.Model\",\"NativeReferenceName\":\"Model\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 340.77,
+          "width": 397.20,
+          "x": 859.37,
+          "y": 359.93,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"ecbff038c61064514ba4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":859.3677204658902,\"y\":20.232945091514143,\"z\":1000,\"width\":397.20465890183027,\"height\":153.34442595673877,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Product.Category\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"Product\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Category\"},\"Name\":\"Product.Category\",\"NativeReferenceName\":\"Category\"}]},\"syncGroup\":{\"groupName\":\"Category\",\"fieldChanges\":true,\"filterChanges\":true},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"Product\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Category\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Bikes'\"}}]]}}}]}}}}]}}}",
+          "filters": "[]",
+          "height": 153.34,
+          "width": 397.20,
+          "x": 859.37,
+          "y": 20.23,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"fbef1ab1234090fb0c8c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":859.3677204658902,\"y\":187.42096505823628,\"z\":2000,\"width\":397.20465890183027,\"height\":156.53910149750416,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Product.Subcategory\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"Product\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Subcategory\"},\"Name\":\"Product.Subcategory\",\"NativeReferenceName\":\"Subcategory\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 156.54,
+          "width": 397.20,
+          "x": 859.37,
+          "y": 187.42,
+          "z": 2000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "R Scatter Plot Initial State",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "85c6db85ca25fe481289",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"1131c9dbad064628644a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":37.98994974874372,\"y\":43.417085427135675,\"z\":0,\"width\":620.502512562814,\"height\":631.356783919598,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"scriptVisual\",\"projections\":{\"Values\":[{\"queryRef\":\"Product.Category\"},{\"queryRef\":\"Product.Subcategory\"},{\"queryRef\":\"Calculations.avg_profit\"},{\"queryRef\":\"Calculations.sum_orders\"},{\"queryRef\":\"Date.Start of Week\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calculations\",\"Type\":0},{\"Name\":\"p\",\"Entity\":\"Product\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"Date\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Category\"},\"Name\":\"Product.Category\",\"NativeReferenceName\":\"Category\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Subcategory\"},\"Name\":\"Product.Subcategory\",\"NativeReferenceName\":\"Subcategory\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Start of Week\"},\"Name\":\"Date.Start of Week\",\"NativeReferenceName\":\"Start of Week\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"avg_profit\"},\"Name\":\"Calculations.avg_profit\",\"NativeReferenceName\":\"avg_profit\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"sum_orders\"},\"Name\":\"Calculations.sum_orders\",\"NativeReferenceName\":\"sum_orders\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Category\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"script\":[{\"properties\":{\"source\":{\"expr\":{\"Literal\":{\"Value\":\"'# The following code to create a dataframe and remove duplicated rows is always executed and acts as a preamble for your script: \\n\\n# dataset <- data.frame(Category, Subcategory, Avg. Gross Profit Margin, Sum Order Quantity, Start of Week)\\n# dataset <- unique(dataset)\\n\\n# Paste or type your script code here:\\n\\nlibrary(ggplot2) # dependency\\n\\nggplot(dataset, aes(y = avg_profit, x = sum_orders)) +\\n  # sets the visual type \\n  geom_point() +\\n  # sets the labels\\n  labs(title = \\\"Scatter Plot\\\", x = \\\"sum_orders\\\", y = \\\"avg_profit\\\")\\n\\n\\n# Fit a linear regression to the plot and extract the coefficients\\n# model <- lm(avg_profit ~ sum_orders, data = dataset)\\n# coefs <- coef(model)\\n\\n# Create a table with the values of the linear regression\\n# library(gridExtra)\\n# grid.table(data.frame(coefs))'\"}}},\"provider\":{\"expr\":{\"Literal\":{\"Value\":\"'R'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 631.36,
+          "width": 620.50,
+          "x": 37.99,
+          "y": 43.42,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"4c5ab24f9ff750d43744\",\"layouts\":[{\"id\":0,\"position\":{\"x\":679.4009983361065,\"y\":372.71214642262896,\"z\":2000,\"width\":286.45590682196337,\"height\":153.34442595673877,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Product.Category\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"Product\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Category\"},\"Name\":\"Product.Category\",\"NativeReferenceName\":\"Category\"}]},\"syncGroup\":{\"groupName\":\"Category\",\"fieldChanges\":true,\"filterChanges\":true},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"Product\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Category\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Bikes'\"}}]]}}}]}}}}]}}}",
+          "filters": "[]",
+          "height": 153.34,
+          "width": 286.46,
+          "x": 679.40,
+          "y": 372.71,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"6bd9c0c4b38ed2226a27\",\"layouts\":[{\"id\":0,\"position\":{\"x\":679.4009983361065,\"y\":42.59567387687188,\"z\":1000,\"width\":572.9118136439267,\"height\":299.234608985025,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Product.Category\"},{\"queryRef\":\"Product.Subcategory\"},{\"queryRef\":\"Date.Start of Week\"},{\"queryRef\":\"Calculations.Avg. Gross Profit Margin\"},{\"queryRef\":\"Calculations.Sum Order Quantity\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calculations\",\"Type\":0},{\"Name\":\"p\",\"Entity\":\"Product\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"Date\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Avg. Gross Profit Margin\"},\"Name\":\"Calculations.Avg. Gross Profit Margin\",\"NativeReferenceName\":\"Avg. Gross Profit Margin\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Sum Order Quantity\"},\"Name\":\"Calculations.Sum Order Quantity\",\"NativeReferenceName\":\"Sum Order Quantity\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Subcategory\"},\"Name\":\"Product.Subcategory\",\"NativeReferenceName\":\"Subcategory\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Category\"},\"Name\":\"Product.Category\",\"NativeReferenceName\":\"Category\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Start of Week\"},\"Name\":\"Date.Start of Week\",\"NativeReferenceName\":\"Start of Week\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 299.23,
+          "width": 572.91,
+          "x": 679.40,
+          "y": 42.60,
+          "z": 1000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"relationships\":[{\"source\":\"f6ccc9497071934f3f0d\",\"target\":\"9bd4ca5e9c4aa633486d\",\"type\":3}],\"objects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":7,\"Percent\":0.6}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"80D\"}}}}}]}}",
+      "displayName": "Replicate Initial State from R",
+      "displayOption": 1,
+      "filters": "[{\"name\":\"c13c459878f500e58b23\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Reseller\"}},\"Property\":\"Reseller\"}},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{\"general\":[{\"properties\":{}}]}}]",
+      "height": 720.00,
+      "name": "de6af2b4ecc7eb1eb02d",
+      "ordinal": 2,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"5934914250d2e1030c70\",\"layouts\":[{\"id\":0,\"position\":{\"x\":859.3677204658902,\"y\":359.93344425956735,\"z\":3000,\"width\":397.20465890183027,\"height\":340.765391014975,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Product.Model\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"Product\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Model\"},\"Name\":\"Product.Model\",\"NativeReferenceName\":\"Model\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 340.77,
+          "width": 397.20,
+          "x": 859.37,
+          "y": 359.93,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"976a0602e0c064ad4964\",\"layouts\":[{\"id\":0,\"position\":{\"x\":13.843594009983361,\"y\":20.232945091514143,\"z\":0,\"width\":826.3560732113144,\"height\":680.4658901830283,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"scatterChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Product.Category\",\"active\":true},{\"queryRef\":\"Product.Subcategory\",\"active\":true},{\"queryRef\":\"Date.Start of Week\",\"active\":true}],\"X\":[{\"queryRef\":\"Calculations.sum_orders\",\"active\":true}],\"Y\":[{\"queryRef\":\"Calculations.avg_profit\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Date\",\"Type\":0},{\"Name\":\"p\",\"Entity\":\"Product\",\"Type\":0},{\"Name\":\"c\",\"Entity\":\"Calculations\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Start of Week\"},\"Name\":\"Date.Start of Week\",\"NativeReferenceName\":\"Start of Week\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Category\"},\"Name\":\"Product.Category\",\"NativeReferenceName\":\"Category\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Subcategory\"},\"Name\":\"Product.Subcategory\",\"NativeReferenceName\":\"Subcategory\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"sum_orders\"},\"Name\":\"Calculations.sum_orders\",\"NativeReferenceName\":\"sum_orders\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"avg_profit\"},\"Name\":\"Calculations.avg_profit\",\"NativeReferenceName\":\"avg_profit\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"trend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"displayName\":{\"expr\":{\"Literal\":{\"Value\":\"'Trend line 1'\"}}}}}]}}}",
+          "filters": "[{\"name\":\"c7557c006833f6aeb480\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Reseller\"}},\"Property\":\"Reseller\"}},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"isHiddenInViewMode\":false},{\"expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Calculations\"}},\"Property\":\"Gross Profit Margin\"}},\"type\":\"Advanced\",\"howCreated\":1,\"isHiddenInViewMode\":false}]",
+          "height": 680.47,
+          "width": 826.36,
+          "x": 13.84,
+          "y": 20.23,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"9bd4ca5e9c4aa633486d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":859.3677204658902,\"y\":20.232945091514143,\"z\":1000,\"width\":397.20465890183027,\"height\":153.34442595673877,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Product.Category\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"Product\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Category\"},\"Name\":\"Product.Category\",\"NativeReferenceName\":\"Category\"}]},\"syncGroup\":{\"groupName\":\"Category\",\"fieldChanges\":true,\"filterChanges\":true},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"Product\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Category\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Bikes'\"}}]]}}}]}}}}]}}}",
+          "filters": "[]",
+          "height": 153.34,
+          "width": 397.20,
+          "x": 859.37,
+          "y": 20.23,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"f6ccc9497071934f3f0d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":859.3677204658902,\"y\":187.42096505823628,\"z\":2000,\"width\":397.20465890183027,\"height\":156.53910149750416,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Product.Subcategory\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"Product\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Subcategory\"},\"Name\":\"Product.Subcategory\",\"NativeReferenceName\":\"Subcategory\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 156.54,
+          "width": 397.20,
+          "x": 859.37,
+          "y": 187.42,
+          "z": 2000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Duplicate of Check Side by Side",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "e7dd7a65a0e62b30deb9",
+      "ordinal": 4,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"1f0538d2b1b7f36bd872\",\"layouts\":[{\"id\":0,\"position\":{\"x\":29.43821121980435,\"y\":44.15731682970653,\"z\":0,\"width\":563.0057895787583,\"height\":478.37093232182076,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"scriptVisual\",\"projections\":{\"Values\":[{\"queryRef\":\"Calculations.sum_orders\"},{\"queryRef\":\"Calculations.avg_profit\"},{\"queryRef\":\"Product.Category\"},{\"queryRef\":\"Product.Subcategory\"},{\"queryRef\":\"Date.Start of Week\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calculations\",\"Type\":0},{\"Name\":\"p\",\"Entity\":\"Product\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"Date\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Category\"},\"Name\":\"Product.Category\",\"NativeReferenceName\":\"Category\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Subcategory\"},\"Name\":\"Product.Subcategory\",\"NativeReferenceName\":\"Subcategory\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Start of Week\"},\"Name\":\"Date.Start of Week\",\"NativeReferenceName\":\"Start of Week\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"avg_profit\"},\"Name\":\"Calculations.avg_profit\",\"NativeReferenceName\":\"avg_profit\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"sum_orders\"},\"Name\":\"Calculations.sum_orders\",\"NativeReferenceName\":\"sum_orders\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"sum_orders\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"script\":[{\"properties\":{\"source\":{\"expr\":{\"Literal\":{\"Value\":\"'library(ggplot2) # dependency\\nlibrary(gridExtra)\\n\\n# Create the scatter plot with a linear regression line\\nscatter_plot <- ggplot(dataset, aes(y = avg_profit, x = sum_orders)) +\\n  geom_point() +\\n  labs(title = \\\"Scatter Plot\\\", x = \\\"sum_orders\\\", y = \\\"avg_profit\\\") +\\n  geom_smooth(method = \\\"lm\\\")\\n\\n# Fit a linear regression to the plot and extract the coefficients\\nmodel <- lm(avg_profit ~ sum_orders, data = dataset)\\n\\n# Create a table with the model summary\\nmodel_summary <- data.frame(\\n  Variable = c(\\\"R-squared\\\", \\\"p-value\\\"),\\n  Value = c(round(summary(model)$r.squared, 4), round(summary(model)$coefficients[2, 4], 4))\\n)\\n\\n# Create the table without row index and column headers\\ntable <- tableGrob(model_summary, rows = NULL, cols = NULL)\\n\\n# Arrange the scatter plot and the model summary table with a 4:5 ratio\\ngrid.arrange(\\n  scatter_plot,\\n  table,\\n  ncol = 1,\\n  heights = c(4, 1)\\n)\\n'\"}}},\"provider\":{\"expr\":{\"Literal\":{\"Value\":\"'R'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 478.37,
+          "width": 563.01,
+          "x": 29.44,
+          "y": 44.16,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"45d4eac6164f915097b0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":993.0329005063792,\"y\":573.5720953916659,\"z\":1000,\"width\":287.3654134487538,\"height\":146.00016973606043,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Product.Category\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"Product\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Category\"},\"Name\":\"Product.Category\",\"NativeReferenceName\":\"Category\"}]},\"syncGroup\":{\"groupName\":\"Category\",\"fieldChanges\":true,\"filterChanges\":true},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"Product\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Category\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Bikes'\"}}]]}}}]}}}}]}}}",
+          "filters": "[]",
+          "height": 146.00,
+          "width": 287.37,
+          "x": 993.03,
+          "y": 573.57,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"9522630c150ba616e878\",\"layouts\":[{\"id\":0,\"position\":{\"x\":592.1117994851339,\"y\":44.03179722198648,\"z\":2000,\"width\":568.9371693682989,\"height\":463.49260233669975,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"scatterChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Product.Category\",\"active\":true},{\"queryRef\":\"Product.Subcategory\",\"active\":true},{\"queryRef\":\"Date.Start of Week\",\"active\":true}],\"X\":[{\"queryRef\":\"Calculations.sum_orders\",\"active\":true}],\"Y\":[{\"queryRef\":\"Calculations.avg_profit\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Date\",\"Type\":0},{\"Name\":\"p\",\"Entity\":\"Product\",\"Type\":0},{\"Name\":\"c\",\"Entity\":\"Calculations\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Start of Week\"},\"Name\":\"Date.Start of Week\",\"NativeReferenceName\":\"Start of Week\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Category\"},\"Name\":\"Product.Category\",\"NativeReferenceName\":\"Category\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Subcategory\"},\"Name\":\"Product.Subcategory\",\"NativeReferenceName\":\"Subcategory\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"sum_orders\"},\"Name\":\"Calculations.sum_orders\",\"NativeReferenceName\":\"sum_orders\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"avg_profit\"},\"Name\":\"Calculations.avg_profit\",\"NativeReferenceName\":\"avg_profit\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"trend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"displayName\":{\"expr\":{\"Literal\":{\"Value\":\"'Trend line 1'\"}}}}}]}}}",
+          "filters": "[{\"name\":\"c7557c006833f6aeb480\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Reseller\"}},\"Property\":\"Reseller\"}},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"isHiddenInViewMode\":false},{\"expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Calculations\"}},\"Property\":\"Gross Profit Margin\"}},\"type\":\"Advanced\",\"howCreated\":1,\"isHiddenInViewMode\":false}]",
+          "height": 463.49,
+          "width": 568.94,
+          "x": 592.11,
+          "y": 44.03,
+          "z": 2000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ],
+  "theme": "AccessibleNeutral"
+}
